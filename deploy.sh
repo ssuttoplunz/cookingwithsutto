@@ -31,7 +31,7 @@ cd cookingwithsutto
 
 echo Checking out gh-pages branch...
 git fetch
-git checkout origin/gh-pages
+git checkout gh-pages
 git pull
 
 echo Deploying...
