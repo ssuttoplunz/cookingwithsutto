@@ -1,29 +1,53 @@
 # deploy.sh
 
-#!/usr/bin/env sh
-
 # abort on errors
 set -e
 
 # build
-echo Building. this may take a minute...
-yarn build
+# echo Building...
+# yarn build
 
-# navigate into the build output directory
+echo Adding CNAME file to dist...
+# go into dist folder
 cd dist
-
-# if you are deploying to a custom domain
+# need when deploying to custom domain
 echo "cookingwithsutto.com" > CNAME
 
-echo Deploying..
-git init
-git add -A
-git commit -m "deploy"
+# navigate out of repo directory
+cd ../..
 
-# deploy
-git push -f git@github.com:ssuttoplunz/cookingwithsutto.git HEAD:origin/gh-pages
+echo Copying files to cookingwithsutto-deploy...
+# create folder called
+mkdir -p cookingwithsutto-deploy
 
-cd -
+# remove anything inside this folder
+rm -rf cookingwithsutto-deploy/*
 
-# script and deploy help taken from:
-# https://dev.to/tiim/how-i-use-vue-js-on-github-pages-45np
+# copy dist into folder
+cp -r cookingwithsutto/dist/* cookingwithsutto-deploy
+
+# return to repo
+cd cookingwithsutto
+
+echo Checking out gh-pages branch...
+git fetch
+git checkout origin/gh-pages
+git pull
+
+echo Deploying...
+# copy back into repo
+cp -r cookingwithsutto-deploy/* cookingwithsutto
+
+
+# TODO: add deploy back later
+# git init
+# git add -A
+# git commit -m "deploy"
+
+# # deploy
+# git push -f git@github.com:ssuttoplunz/cookingwithsutto.git HEAD:origin/gh-pages
+
+# cd -
+
+# # script and deploy help taken from:
+# # https://dev.to/tiim/how-i-use-vue-js-on-github-pages-45np
