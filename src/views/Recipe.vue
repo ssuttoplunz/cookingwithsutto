@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container fluid>
-      <v-row flat v-if="item && item.title" justify="center">
+      <v-row flat v-if="item && item.title" justify="center" class="pa-3">
         <h1>{{item.title}}</h1>
       </v-row>
       <v-row>

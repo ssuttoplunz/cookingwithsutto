@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container fluid>
-      <v-row justify="center">
+      <v-row justify="center" class="align-center pa-6">
         <h1 style="padding-right:8px;">Hello, I'm</h1>
         <v-img alt="Sutto"
                 class="shrink"
