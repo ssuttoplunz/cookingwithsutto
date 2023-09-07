@@ -1,79 +1,70 @@
 <template>
   <v-app>
-     <!-- Potential colors for bar:
-     blue lighten-1
-     red darken-2
-     black -->
-    <v-app-bar
-      app
-      color="black"
-      dark>
-      <router-link to="/">
-        <div class="d-flex align-center">
-          <v-img class="mr-2"
-                :src="require('./assets/pot_white.png')"
-                transition="scale-transition"
-                max-height="56"
-                max-width="90"/>
-
-          <v-img alt="Cooking with Sutto"
-                class="hidden-xs-only"
-                :src="require('./assets/cooking_with_sutto_white.png')"
-                transition="scale-transition"
-                max-height="56"
-                max-width="220"/>
-        </div>
-      </router-link>
-
+    <v-app-bar app color="black" dark>
+      <v-app-bar-nav-icon class="hidden-sm-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-img
+        class="px-2"
+        :style="{ cursor: 'pointer' }"
+        :src="potWhite"
+        :max-width="100"
+        @click="returnToHomePage"
+      />
+      <v-img
+        class="d-none d-sm-flex"
+        :style="{ cursor: 'pointer' }"
+        :src="cookingWithSuttoWhite"
+        :max-width="220"
+        @click="returnToHomePage"
+      />
       <v-spacer></v-spacer>
-      <v-btn to="/about" class="mr-1 hidden-xs-only" color="black" dark>About me</v-btn>
-      <v-btn icon
-             href="https://www.instagram.com/cookingwithsutto/"
-             target="_blank" color="black">
-        <v-icon color="#F783AC">fab fa-instagram</v-icon>
-      </v-btn>
-      <v-btn icon small
-             href="mailto:cookingwithsutto@gmail.com"
-             target="_blank" color="black">
-        <v-icon color="light-blue lighten-1">far fa-envelope</v-icon>
-      </v-btn>
-      <v-app-bar-nav-icon class="hidden-sm-and-up"  @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-btn to="/about" class="mr-1 d-none d-sm-flex" color="white" dark>About me</v-btn>
+      <v-btn
+        icon="mdi-instagram"
+        href="https://www.instagram.com/cookingwithsutto/"
+        target="_blank"
+        color="pink"
+      />
+      <v-btn
+        icon="mdi-email-outline"
+        small
+        href="mailto:cookingwithsutto@gmail.com"
+        target="_blank"
+        color="blue"
+      />
     </v-app-bar>
-    <v-navigation-drawer
-      v-model="drawer"
-      temporary
-      right dark app>
+    <v-navigation-drawer :model-value="drawer" temporary right dark app>
       <v-list nav dense>
-        <v-list-item class="text-right d-block">
-          <v-btn icon @click="drawer = false"><v-icon>fa fa-times</v-icon></v-btn>
-        </v-list-item>
-        <v-list-item to="/" >
+        <v-list-item to="/">
           <v-list-item-title>
-            <v-icon class="mr-1">fa fa-home</v-icon> Home
+            <v-icon class="mr-1">mdi-home</v-icon> Home
           </v-list-item-title>
         </v-list-item>
-        <v-list-item to="/about" >
+        <v-list-item to="/about">
           <v-list-item-title>
-            <v-icon class="mr-2">fa fa-user</v-icon> About me
+            <v-icon class="mr-2">mdi-account</v-icon> About me
           </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import potWhite from '@/assets/pot-white.png'
+import cookingWithSuttoWhite from '@/assets/cooking-with-sutto-white.png'
 
-export default Vue.extend({
-  name: 'App',
+const drawer = ref(false)
 
-  data: () => ({
-    drawer: false
-  })
-})
+const router = useRouter()
+
+const returnToHomePage = () => {
+  router.push('/')
+}
+
 </script>

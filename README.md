@@ -1,34 +1,44 @@
-# Cooking With Sutto
+# default
 
 ## Project setup
+
 ```
-yarn install
+# yarn
+yarn
+
+# npm
+npm install
+
+# pnpm
+pnpm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-yarn serve
+# yarn
+yarn dev
+
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
 ```
 
 ### Compiles and minifies for production
+
 ```
+# yarn
 yarn build
-```
 
-### Run your unit tests
-```
-yarn test:unit
-```
+# npm
+npm run build
 
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
-
-### Lints and fixes files
-```
-yarn lint
+# pnpm
+pnpm build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+See [Configuration Reference](https://vitejs.dev/config/).

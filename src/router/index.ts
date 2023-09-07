@@ -1,24 +1,18 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Recipe from '../views/Recipe.vue'
-
-Vue.use(VueRouter)
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '@/views/Home.vue'
+import About from '@/views/About.vue'
+import Recipe from '@/views/Recipe.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home,
-    meta: {
-      title: 'Home'
-    }
   },
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: About,
   },
   {
     path: '/recipe/:id',
@@ -28,8 +22,9 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
-  routes
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
 })
 
 export default router
