@@ -6,8 +6,8 @@
         <v-img alt="Sutto"
                 class="shrink"
                 contain
-                :src="require('@/assets/sutto_black.png')"
-                width="75"/>
+                :src="suttoBlack"
+                :max-width="75"/>
         <h1>!</h1>
       </v-row>
       <v-row justify="space-around">
@@ -19,21 +19,21 @@
           <v-row>
             <v-col cols="6">
               <v-img alt="Image of Sutto holding clothes hangers of fresh pasta"
-                :src="require('@/assets/me-with-cows.jpg')"/>
+                :src="meWithCows"/>
             </v-col>
             <v-col cols="6">
               <v-img alt="Image of Sutto holding clothes hangers of fresh pasta"
-                 :src="require('@/assets/me-with-pasta.jpg')"/>
+                 :src="meWithPasta"/>
             </v-col>
           </v-row>
           <v-row>
             <v-col cols="6">
               <v-img alt="Image of Sutto holding clothes hangers of fresh pasta"
-                :src="require('@/assets/me-with-family.jpg')"/>
+                :src="meWithFamily"/>
             </v-col>
             <v-col cols="6">
               <v-img alt="Image of Sutto holding clothes hangers of fresh pasta"
-                 :src="require('@/assets/me-with-b.jpg')"/>
+                 :src="meWithB"/>
             </v-col>
           </v-row>
         </v-col>
@@ -41,3 +41,13 @@
     </v-container>
   </div>
 </template>
+
+
+<script setup lang="ts">
+import suttoBlack from '@/assets/sutto-black.png'
+import meWithCows from '@/assets/me-with-cows.jpg'
+import meWithPasta from '@/assets/me-with-pasta.jpg'
+import meWithFamily from '@/assets/me-with-family.jpg'
+import meWithB from '@/assets/me-with-b.jpg'
+
+</script>

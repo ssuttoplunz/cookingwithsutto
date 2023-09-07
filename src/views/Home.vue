@@ -4,23 +4,18 @@
       <v-col
         v-for="item in items"
         :key="item.title"
-        xs="12" sm="6" md="4" lg="4" xl="3">
+        xs="12" sm="6" md="4" lg="4" xl="3"
+      >
           <v-card :to="`/recipe/${item.id}`">
             <v-img
-              :src="require(`@/assets/${item.hardsrc}`)"
-              :lazy-src="require(`@/assets/${item.hardsrc}`)"
-              class="white--text align-end"
+              :key="item.hardsrc"
+              :src="getImageUrl(item.hardsrc)"
+              :lazy-src="getImageUrl(item.hardsrc)"
+              class="text-white align-end"
+              cover
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="500px">
-              <v-card-title v-text="item.title"></v-card-title>
-              <template v-slot:placeholder>
-                <v-row
-                  class="fill-height ma-0"
-                  align="center"
-                  justify="center">
-                  <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                </v-row>
-              </template>
+              <v-card-title>{{item.title}}</v-card-title>
             </v-img>
           </v-card>
         </v-col>
@@ -28,16 +23,14 @@
   </v-container>
 </template>
 
-<script>
-import items from '@/assets/data.json'
+<script setup lang="ts">
+import { reactive } from 'vue'
+import itemsData from '@/assets/data.json'
 
-export default {
-  name: 'Home',
-  data: () => ({
-    items: []
-  }),
-  mounted () {
-    this.items = items
-  }
-}
+const items = reactive(itemsData)
+
+const getImageUrl = (url: string) => (
+  new URL(`/src/assets/${url}`, import.meta.url).href
+)
+
 </script>
