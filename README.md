@@ -1,4 +1,4 @@
-# default
+# Cooking With Sutto
 
 ## Project setup
 
