@@ -1,0 +1,28 @@
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0" xmlns:video="https://www.google.com/schemas/sitemap-video/1.1" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cookingwithsutto.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://cookingwithsutto.com/#/about</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cookingwithsutto.com/#/recipe/basic-pasta-sauce</loc>
+  </url>
+  <url>
+    <loc>https://cookingwithsutto.com/#/recipe/fresh-pasta</loc>
+  </url>
+  <url>
+    <loc>https://cookingwithsutto.com/#/recipe/birthday-cake</loc>
+  </url>
+  <url>
+    <loc>https://cookingwithsutto.com/#/recipe/uovo-alla-coque</loc>
+  </url>
+  <url>
+    <loc>https://cookingwithsutto.com/#/recipe/braised-short-ribs</loc>
+  </url>
+  <url>
+    <loc>https://cookingwithsutto.com/#/recipe/fruit-tart</loc>
+  </url>
+</urlset>

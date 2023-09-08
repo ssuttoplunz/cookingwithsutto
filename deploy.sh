@@ -8,9 +8,12 @@ echo Building...
 yarn build
 
 echo Adding CNAME file to dist...
-
 # copy CNAME into dist folder
 cp ./CNAME ./dist/
+
+echo Adding sitemap file to dist...
+# copy CNAME into dist folder
+cp ./sitemap.xml ./dist/
 
 # navigate out of repo directory
 cd ..
