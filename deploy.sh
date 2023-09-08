@@ -38,7 +38,7 @@ git pull
 
 echo Deploying...
 # remove everything in gh-pages branch
-rm -rf !(./node-modules/*|.gitignore)
+ls | fgrep -v node_modules | xargs rm -rf
 # copy dist folder into repo
 cp -r ../cookingwithsutto-deploy/* ../cookingwithsutto/
 
