@@ -4,17 +4,16 @@
 set -e
 
 # build
-# echo Building...
-# yarn build
+echo Building...
+yarn build
 
 echo Adding CNAME file to dist...
-# go into dist folder
-cd dist
-# need when deploying to custom domain
-echo "cookingwithsutto.com" > CNAME
+
+# copy CNAME into dist folder
+cp ./CNAME ./dist/
 
 # navigate out of repo directory
-cd ../..
+cd ..
 
 echo Copying files to cookingwithsutto-deploy...
 # create folder called
