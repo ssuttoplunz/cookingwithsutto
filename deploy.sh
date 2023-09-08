@@ -42,16 +42,15 @@ ls | fgrep -v node_modules | xargs rm -rf
 # copy dist folder into repo
 cp -r ../cookingwithsutto-deploy/* ../cookingwithsutto/
 
+# Actually deploy to git
+git init
+git add -A
+git commit -m "deploying latest master to gh-pages"
 
-# TODO: add deploy back later
-# git init
-# git add -A
-# git commit -m "deploy"
-
-# # deploy
-# git push -f git@github.com:ssuttoplunz/cookingwithsutto.git HEAD:origin/gh-pages
+# deploy
+git push -f git@github.com:ssuttoplunz/cookingwithsutto.git HEAD:origin/gh-pages
 
 # cd -
 
-# # script and deploy help taken from:
-# # https://dev.to/tiim/how-i-use-vue-js-on-github-pages-45np
+# script and deploy help taken from:
+# https://dev.to/tiim/how-i-use-vue-js-on-github-pages-45np
