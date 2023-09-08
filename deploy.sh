@@ -38,7 +38,8 @@ git pull
 
 echo Deploying...
 # copy back into repo
-cp -r cookingwithsutto-deploy/* cookingwithsutto
+ls
+cp -r ../cookingwithsutto-deploy/* cookingwithsutto
 
 
 # TODO: add deploy back later
