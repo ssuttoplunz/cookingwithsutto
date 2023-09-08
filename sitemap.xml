@@ -4,25 +4,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://cookingwithsutto.com/about</loc>
+    <loc>https://cookingwithsutto.com/#/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cookingwithsutto.com/recipe/basic-pasta-sauce</loc>
+    <loc>https://cookingwithsutto.com/#/recipe/basic-pasta-sauce</loc>
   </url>
   <url>
-    <loc>https://cookingwithsutto.com/recipe/fresh-pasta</loc>
+    <loc>https://cookingwithsutto.com/#/recipe/fresh-pasta</loc>
   </url>
   <url>
-    <loc>https://cookingwithsutto.com/recipe/birthday-cake</loc>
+    <loc>https://cookingwithsutto.com/#/recipe/birthday-cake</loc>
   </url>
   <url>
-    <loc>https://cookingwithsutto.com/recipe/uovo-alla-coque</loc>
+    <loc>https://cookingwithsutto.com/#/recipe/uovo-alla-coque</loc>
   </url>
   <url>
-    <loc>https://cookingwithsutto.com/recipe/braised-short-ribs</loc>
+    <loc>https://cookingwithsutto.com/#/recipe/braised-short-ribs</loc>
   </url>
   <url>
-    <loc>https://cookingwithsutto.com/recipe/fruit-tart</loc>
+    <loc>https://cookingwithsutto.com/#/recipe/fruit-tart</loc>
   </url>
 </urlset>
