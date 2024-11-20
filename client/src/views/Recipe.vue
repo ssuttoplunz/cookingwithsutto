@@ -32,8 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
-import itemsData from '@/assets/data.json'
+import { useAppStore } from '@/store/app'
 import RecipeBlurb from '@/components/RecipeBlurb.vue'
 
 const props = defineProps({
@@ -54,6 +53,8 @@ interface Item {
   blurbs: Blurb[]
 }
 
-const item: Item = reactive(itemsData.filter(item => item.id === props.id)[0])
+const appStore = useAppStore()
+
+const item = appStore.getRecipe(props.id)
 
 </script>

@@ -10,19 +10,24 @@
     "blurbs": [
       {
         "imageUrl": "fresh-pasta.jpg",
+        "title": "Mix Ingredients",
         "text": "Start by putting all the flour and pinch of salt into a bowl (I use all-purpose, you can also use bread flour). Make a well in the middle, and lightly beat 2 eggs and 1 egg yolk with a fork and then plop them in the middle. Start mixing together with your hands or a fork until it starts to come together enough to move to a countertop."
       },
       {
-      "text": "Next, lightly flour the countertop and start kneading in a downward motion (smush the dough onto the counter, away from you, then fold it over back on top of itself and repeat for 10 minutes, or until it is glossy on the outside. Note: if the mixture is a little too soft and sticky, add a bit of flour until it is manageable with your hands, conversely if it is too stiff or crumbly, add a bit of water on your hands and then knead it in."
+        "title": "Knead Dough",
+        "text": "Next, lightly flour the countertop and start kneading in a downward motion (smush the dough onto the counter, away from you, then fold it over back on top of itself and repeat for 10 minutes, or until it is glossy on the outside. Note: if the mixture is a little too soft and sticky, add a bit of flour until it is manageable with your hands, conversely if it is too stiff or crumbly, add a bit of water on your hands and then knead it in."
       },
       {
-      "text": "After it is smooth on the outside, form the dough into a ball, cover in plastic wrap, and leave to rest at room temp for at least 1 hour."
+        "title": "Let it Rest",
+        "text": "After it is smooth on the outside, form the dough into a ball, cover in plastic wrap, and leave to rest at room temp for at least 1 hour."
       },
       {
-      "text": "Roll out on the counter, lightly dusting with flour when needed (as thin as you can get it), or use a pasta machine or attachment starting from the widest setting, and working your way down. You will want to pass it through the widest setting multiple times and then work your way down, also it is helpful to cut the dough in half to manage it better (keep the rest covered as you work with it). Once you have finished rolling your dough and have thin sheets of pasta, you can keep them thick for lasagna, cut them into ravioli shapes, or use a fettuccine or linguine attachment (or knife) to cut them into the right shapes."
+        "title": "Roll and Shape",
+        "text": "Roll out on the counter, lightly dusting with flour when needed (as thin as you can get it), or use a pasta machine or attachment starting from the widest setting, and working your way down. You will want to pass it through the widest setting multiple times and then work your way down, also it is helpful to cut the dough in half to manage it better (keep the rest covered as you work with it). Once you have finished rolling your dough and have thin sheets of pasta, you can keep them thick for lasagna, cut them into ravioli shapes, or use a fettuccine or linguine attachment (or knife) to cut them into the right shapes."
       },
       {
-      "text": "Once you have cut the pasta, I like to hang it as I go on clothes hangers or a clothing rack to ensure they do not stick to each other. Fresh pasta is best eaten fresh, so right into the pot after making (and only a ~2-5 min cooking time), but if you do want to cook it later, you can flash cook it for 30 seconds, drain, toss in some olive oil, and then store it in the fridge or freezer."
+        "title": "Enjoy!",
+        "text": "Once you have cut the pasta, I like to hang it as I go on clothes hangers or a clothing rack to ensure they do not stick to each other. Fresh pasta is best eaten fresh, so right into the pot after making (and only a ~2-5 min cooking time), but if you do want to cook it later, you can flash cook it for 30 seconds, drain, toss in some olive oil, and then store it in the fridge or freezer."
       }
     ]
   },

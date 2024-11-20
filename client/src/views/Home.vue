@@ -25,13 +25,21 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
-import itemsData from '@/assets/data.json'
+import { computed, onMounted } from 'vue'
+import { useAppStore } from '@/store/app'
 
-const items = reactive(itemsData)
+const appStore = useAppStore()
+
+onMounted(() => {
+  appStore.fetchRecipes()
+})
+
+const items = computed(() => appStore.recipes)
+
 
 const getImageUrl = (url: string) => (
   new URL(`/src/assets/${url}`, import.meta.url).href
 )
+
 
 </script>
