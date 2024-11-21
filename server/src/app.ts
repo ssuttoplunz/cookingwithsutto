@@ -1,29 +1,25 @@
-import itemsData from './data.json';
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
+import itemsData from './data.json';
+import pool from './db';
+import { QueryResult } from 'mysql2';
 
 type RecipeRequestParams = {
   id?: string
 }
-type Blurb = {
+type Step = {
   text: string
-  imageUrl?: string
+  image_url?: string
   title?: string
-  imagePosition?: string // TODO: can be more specific about types later
+  image_position?: string // TODO: can be more specific about types later
 }
  
 type RecipeResponseBody = {
   id: string
   title: string
   date: string
-  hardsrc: string
-  ingredients?: string[]
-  blurbs: Blurb[]
+  image_url: string
 }
-
-const getItemsDataById = (id: string): RecipeResponseBody => {
-  return itemsData.filter((item: RecipeResponseBody) => item.id === id)[0];
-};
 
 const app: Application = express();
 app.use(cors()); // Enable CORS
@@ -31,13 +27,33 @@ app.use(cors()); // Enable CORS
 // TODO: add validation using something like zod or joi
 // TODO: document API endpoints w/ swagger or openapi
 
-app.get('/api/recipes', (req: Request, res: Response) => {
-  const queryParams = req.query as RecipeRequestParams;
-  const id = queryParams?.id;
+app.get('/api/recipes', async (req: Request, res: Response) => {
+  try {
+    const [recipes] = await pool.query('SELECT * FROM recipes');
+    res.json(recipes);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+app.get('/api/recipes/:id', async (req: Request, res: Response) => {
+  const id = req.params.id as RecipeRequestParams;
+
   if (id) {
-    res.json(getItemsDataById(id));
-  } else {
-    res.json(itemsData);
+    const whereIdSql = `WHERE recipe_id = '${id}'`;
+    try {
+      const [recipe] = await pool.query(`SELECT * FROM recipes WHERE id = '${id}'`);
+      const [steps] = await pool.query(
+        `SELECT image_url,title,text,image_position FROM steps ${whereIdSql}`
+      );
+      const [ingredients] = await pool.query(
+        `SELECT amount,unit,name FROM ingredients ${whereIdSql}`
+      );
+      res.json({ recipe, steps, ingredients });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Internal Server Error');
+    }
   }
 });
 

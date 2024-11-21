@@ -9,9 +9,9 @@
       >
           <v-card :to="`/recipe/${item.id}`">
             <v-img
-              :key="item.hardsrc"
-              :src="getImageUrl(item.hardsrc)"
-              :lazy-src="getImageUrl(item.hardsrc)"
+              :key="item.image_url"
+              :src="getImageUrl(item.image_url)"
+              :lazy-src="getImageUrl(item.image_url)"
               class="text-white align-end"
               cover
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"

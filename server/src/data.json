@@ -3,13 +3,13 @@
     "id": "fresh-pasta",
     "title": "How to make fresh pasta",
     "date": "",
-    "hardsrc": "fresh-pasta.jpg",
+    "image_url": "fresh-pasta.jpg",
     "ingredients": [
       "1 ¾ cups flour", "3 eggs", "salt"
     ],
-    "blurbs": [
+    "steps": [
       {
-        "imageUrl": "fresh-pasta.jpg",
+        "image_url": "fresh-pasta.jpg",
         "title": "Mix Ingredients",
         "text": "Start by putting all the flour and pinch of salt into a bowl (I use all-purpose, you can also use bread flour). Make a well in the middle, and lightly beat 2 eggs and 1 egg yolk with a fork and then plop them in the middle. Start mixing together with your hands or a fork until it starts to come together enough to move to a countertop."
       },
@@ -35,27 +35,27 @@
     "id": "basic-pasta-sauce",
     "title": "Basic pasta sauce",
     "date": "",
-    "hardsrc": "basic-pasta-sauce.jpg",
+    "image_url": "basic-pasta-sauce.jpg",
     "ingredients": [
       "1 can tomatoes (~28oz)", "2 tbsp olive oil", "5 cloves garlic", "10 leaves of basil", "large pinch of sugar", "pinch of salt"
     ],
-    "blurbs": [
+    "steps": [
       {
         "text": "Very simple tomato sauce recipe. Easy to make, and done in under an hour!"
       },
       {
-        "imageUrl": "basic-pasta-sauce-tomatoes.jpg",
+        "image_url": "basic-pasta-sauce-tomatoes.jpg",
         "title": "Prep ingredients",
         "text": "I like to prep everything first: peel garlic, and leave whole, get basil leaves out (also whole) and get canned tomatoes ready. For the canned tomatoes, I love crushed or diced tomatoes to retain some flavor, and it is worth spending a little more to get good quality tomatoes. I use and recommend San Marzano."
       },
       {
-        "imageUrl": "basic-pasta-sauce-saute.jpg",
+        "image_url": "basic-pasta-sauce-saute.jpg",
         "title": "Sauté garlic",
         "text": "First step is to get a medium sized pot and heat it on medium heat. Add two tablespoons of olive oil and whole garlic cloves. The goal is not to brown them in any way, but only to infuse the oil with garlic flavor before adding the sauce. This should take less than a minute from when garlic starts to simmer.",
-        "imagePosition": "left"
+        "image_position": "left"
       },
       {
-        "imageUrl": "basic-pasta-sauce.jpg",
+        "image_url": "basic-pasta-sauce.jpg",
         "title": "Add tomatoes and basil",
         "text": "Pour in the whole can of tomato sauce, a large pinch of sugar, a pinch of salt, as well as the basil leaves. I also sometimes put the entire stem of the basil in as well (it is easier to remove at the end if unwanted in the final sauce). Give it a stir, then let simmer on low for at least 40 minutes. You can tell when the sauce is done when the garlic cloves are able to be smashed against the side of the pan with a wooden spoon. Repeat for all cloves, and stir in the garlicky goodness!"
       },
@@ -68,8 +68,8 @@
     "id": "birthday-cake",
     "title": "Birthday Cake",
     "date": "",
-    "hardsrc": "birthday-cake.jpg",
-    "blurbs": [
+    "image_url": "birthday-cake.jpg",
+    "steps": [
       {
         "text": "Recipe coming soon!"
       }
@@ -79,13 +79,13 @@
     "id": "uovo-alla-coque",
     "title": "Uovo alla coque",
     "date": "",
-    "hardsrc": "uovo-alla-coque.jpg",
+    "image_url": "uovo-alla-coque.jpg",
     "ingredients": [
       "eggs", "water", "pinch of salt"
     ],
-    "blurbs": [
+    "steps": [
       {
-        "imageUrl": "uovo-alla-coque.jpg",
+        "image_url": "uovo-alla-coque.jpg",
         "title": "Soft boiled eggs",
         "text": "Bring water to a boil in a pot that generously fits all of the eggs you wish to use. Once it boils, gently place eggs (directly from the fridge) in for 6 minutes. Take out and place in ice water to cool quickly."
       },
@@ -98,13 +98,13 @@
     "id": "braised-short-ribs",
     "title": "Braised short ribs",
     "date": "",
-    "hardsrc": "braised-short-ribs.jpg",
+    "image_url": "braised-short-ribs.jpg",
     "ingredients": [
       "2 ½ lbs short ribs, cut into pieces", "salt", "2 dried medium-spiece chiles (e.g. guajillo or ancho)", "1 onion (really any kind is fine), sliced crosswise into rounds", "5 whole garlic cloves", "1 tsp red pepper flakes", "1 tsp ground coriander" , "1 tsp ground cumin", "½ tsp ground cinnamon", "3 tbsp vegetable oil", "2 tbsp tomato paste", "½ acorn squash (~1 lb) sliced into wedges", "Plain whole-milk Greek yogurt or sour cream", "lime wedges", "cilantro (optional)"
     ],
-    "blurbs": [
+    "steps": [
       {
-        "imageUrl": "braised-short-ribs.jpg",
+        "image_url": "braised-short-ribs.jpg",
         "title": "Prepare the ribs",
         "text": "Generously salt the ribs, and leave at room temperature for 1 hour, you can also leave uncovered overnight in the fridge, and then leave at room temp for 1 hour before cooking."
       },
@@ -129,26 +129,27 @@
     "id": "fruit-tart",
     "title": "Fruit tart",
     "date": "05-26-2020",
-    "hardsrc": "fruit-tart.jpg",
+    "image_url": "fruit-tart.jpg",
     "ingredients": [
       "1 stick unsalted butter, softened", "1 cup sugar", "5 eggs", "2 ¼ cups flour", "salt", "¼ cup flour", "2 ¼ cup whole milk" , "1 tsp vanilla", "fresh fruit of your choice (I recommend raspberries, sliced strawberries, and blueberries) "     ],
-     "blurbs": [
+     "steps": [
       {
-        "imageUrl": "fruit-tart-assembly.jpg",
+        "image_url": "fruit-tart-assembly.jpg",
         "title": "Prepare the tart shell",
         "text": "Mix 1 stick butter with a little under ½ cup sugar, and a pinch of salt with a mixer or a whisk until it lightens in color and is fluffier (shouldn’t take longer than 1 min). Next, lightly beat 1 egg, and plop that in with 2 ¼ cups flour. Mix with utensil or hands until it all comes together and is uniform. Shape the dough into a square about 1” thick, and cut into 4 pieces. Stack them on top of each other and enjoy while you squish them down. Repeat. Next put it back into a ball or the square shape, wrap in plastic wrap, and chill in the fridge for 1 hour."
       },
       {
-        "imageUrl": "fruit-tart-slice.jpg",
+        "image_url": "fruit-tart-slice.jpg",
         "title": "Prepare the custard",
-        "text": "While the tart dough is resting, you can prepare the custard. Beat 4 egg yolks with ½ cup of sugar in a bowl until pale and fluffy (with whisk or mixer), add ¼ cup flour a little at a time until uniform. Set aside. Heat 2 ¼ cup milk until it comes to a boil (careful not to have it burn at the bottom of the pan (mine did and I had to clean the pot). When it is just boiling, take off the heat, and slowly add it back to the egg yolk mixture stirring it in gradually. Then, assuming you don’t need to wash your milk pan, put the entire mixture back in the pot, and place it over low/medium heat stirring continuously until it thickens (be patient, it might take a little, if it is bubbling the stove is too high). Once thickened, pour into a bowl and stir while it cools (to not have a “crust” form on top), and then place into the fridge with plastic wrap on top to prevent forming a crust."
+        "text": "While the tart dough is resting, you can prepare the custard. Beat 4 egg yolks with ½ cup of sugar in a bowl until pale and fluffy (with whisk or mixer), add ¼ cup flour a little at a time until uniform. Set aside. Heat 2 ¼ cup milk until it comes to a boil (careful not to have it burn at the bottom of the pan (mine did and I had to clean the pot). When it is just boiling, take off the heat, and slowly add it back to the egg yolk mixture stirring it in gradually. Then, assuming you don’t need to wash your milk pan, put the entire mixture back in the pot, and place it over low/medium heat stirring continuously until it thickens (be patient, it might take a little, if it is bubbling the stove is too high). Once thickened, pour into a bowl and stir while it cools (to not have a “crust” form on top), and then place into the fridge with plastic wrap on top to prevent forming a crust.",
+        "image_position": "left"
       },
       {
         "title": "Roll out and bake the tart",
         "text": "Preheat the oven to 350. Take the tart crust out of the fridge, roll into a ¼ thick circle, and place in a 9” pie/ cake pan (or tart pan if you’re fancy). Put pie weights or dried beans on top of parchment paper cut to the pie size inside to keep the dough from rising, if you don’t have that, puncture the bottom multiple times with a fork. Place in the oven for about 25-30 minutes. Let cool completely."
       },
       {
-        "imageUrl": "fruit-tart.jpg",
+        "image_url": "fruit-tart.jpg",
         "title": "Avengers assemble!",
         "text": "Place the custard in the cooled tart shell, smooth out the top, then place fresh fruit in whatever arrangement suits your fancy. Can be eaten right after making, but for some extra flavor mixing, best eaten the next day. Store in fridge overnight."
       },
