@@ -16,7 +16,7 @@ echo Adding sitemap file to dist...
 cp ./sitemap.xml ./dist/
 
 # navigate out of repo directory
-cd ..
+cd ../..
 
 echo Copying files to cookingwithsutto-deploy...
 # create folder called
@@ -26,10 +26,10 @@ mkdir -p cookingwithsutto-deploy
 rm -rf cookingwithsutto-deploy/*
 
 # copy dist into folder
-cp -r cookingwithsutto/dist/* cookingwithsutto-deploy
+cp -r cookingwithsutto/client/dist/* cookingwithsutto-deploy
 
 # return to repo
-cd cookingwithsutto
+cd cookingwithsutto/client
 
 echo Checking out gh-pages branch...
 git fetch
@@ -40,7 +40,7 @@ echo Deploying...
 # remove everything in gh-pages branch
 ls | fgrep -v node_modules | xargs rm -rf
 # copy dist folder into repo
-cp -r ../cookingwithsutto-deploy/* ../cookingwithsutto/
+cp -r ../cookingwithsutto-deploy/* ../cookingwithsutto/client
 
 # Actually deploy to git
 git init
