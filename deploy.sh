@@ -48,7 +48,7 @@ git add -A
 git commit -m "deploying latest master to gh-pages"
 
 # deploy
-git push -f git@github.com:ssuttoplunz/cookingwithsutto.git HEAD:origin/gh-pages
+git push -f
 
 # cd -
 
