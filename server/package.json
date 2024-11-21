@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "src/app.ts",
   "license": "MIT",
+  "scripts": {
+    "dev": "npx ts-node src/app.ts"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
