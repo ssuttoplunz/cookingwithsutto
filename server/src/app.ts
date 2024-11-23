@@ -6,19 +6,6 @@ import pool from './db';
 type RecipeRequestParams = {
   id?: string
 }
-type Step = {
-  text: string
-  image_url?: string
-  title?: string
-  image_position?: string // TODO: can be more specific about types later
-}
- 
-type RecipeResponseBody = {
-  id: string
-  title: string
-  date: string
-  image_url: string
-}
 
 const app: Application = express();
 app.use(cors()); // Enable CORS

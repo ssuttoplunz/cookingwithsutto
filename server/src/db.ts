@@ -1,7 +1,8 @@
 import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
 
-dotenv.config(); // Load environment variables
+// TODO: when we need prod and other .env files, can make env a variable
+dotenv.config({ path: ['.env.local', '.env'] }); // Load environment variables
 
 const pool = mysql.createPool({
   host: process.env.DB_HOST,

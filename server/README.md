@@ -20,19 +20,9 @@ npm run dev
 
 ## Database setup and creation
 
-Create .env with the following in /server folder:
-
-```
-DB_HOST=localhost
-DB_USER=YOUR_USER
-DB_PASSWORD=YOUR_PASSWORD
-DB_NAME=cookingwithsutto
-PORT=5000
-```
-
-Either in the mysql terminal or in the db manager of your choice:
-1. Log in `mysql -u YOUR_USERNAME -p`
-2. Run the following queries to set up the database and create the tables
+1. Copy server `.env` file into a new file `.env.local` and replace username and password.
+2. Either in the mysql terminal or in the db manager of your choice, log in `mysql -u YOUR_USERNAME -p` and then put in your password
+3. Run the following queries to set up the database and create the tables
 ```
 CREATE DATABASE cookingwithsutto;
 USE cookingwithsutto;
@@ -65,7 +55,7 @@ image_position ENUM('left', 'right') DEFAULT 'right', -- predefined positions fo
 FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
 );
 ```
-3. Run the following query to set up the recipes table
+4. Run the following query to set up the recipes table
 ```
 INSERT INTO recipes (id, title, date, image_url) VALUES
 (UUID(), 'How to make fresh pasta', '2023-11-20 08:45:23', 'fresh-pasta.jpg'),
@@ -75,7 +65,7 @@ INSERT INTO recipes (id, title, date, image_url) VALUES
 (UUID(), 'Braised short ribs', '2023-06-30 18:55:00', 'braised-short-ribs.jpg'),
 (UUID(), 'Fruit tart', '2023-03-21 14:33:55', 'fruit-tart.jpg');
 ```
-4. After you create your new recipes with new UUIDs, get the UUIDs by running `SELECT * FROM recipes;` and then replace the placeholders for UUIDs with the real UUIDs in the code below, then run the code to add data to the ingredients and steps table
+5. After you create your new recipes with new UUIDs, get the UUIDs by running `SELECT * FROM recipes;` and then replace the placeholders for UUIDs with the real UUIDs in the code below, then run the code to add data to the ingredients table
 
 ```
 INSERT INTO ingredients (recipe_id, amount, unit, name) VALUES
@@ -115,7 +105,10 @@ INSERT INTO ingredients (recipe_id, amount, unit, name) VALUES
 ('REPLACE_WITH_FRUIT_TART_UUID', 2.25, 'cup', 'whole milk'),
 ('REPLACE_WITH_FRUIT_TART_UUID', 1, 'tsp', 'vanilla'),
 ('REPLACE_WITH_FRUIT_TART_UUID', NULL, NULL, 'fresh fruit of choice');
+```
 
+6. Replace the real UUIDs with the placeholders for the following, and add data to the steps table
+```
 INSERT INTO steps (recipe_id, image_url, title, text, image_position) VALUES
 
   ('REPLACE_WITH_FRESH_PASTA_UUID', 'fresh-pasta.jpg', 'Mix Ingredients', 'Start by putting all the flour and pinch of salt into a bowl (I use all-purpose, you can also use bread flour). Make a well in the middle, and lightly beat 2 eggs and 1 egg yolk with a fork and then plop them in the middle. Start mixing together with your hands or a fork until it starts to come together enough to move to a countertop.', 'right'),
@@ -147,4 +140,4 @@ INSERT INTO steps (recipe_id, image_url, title, text, image_position) VALUES
   ('REPLACE_WITH_FRUIT_TART_UUID', NULL, 'Avengers assemble!', 'Place the custard in the cooled tart shell, smooth out the top, then place fresh fruit in whatever arrangement suits your fancy. Can be eaten right after making, but for some extra flavor mixing, best eaten the next day. Store in fridge overnight.', 'right'),
   ('REPLACE_WITH_FRUIT_TART_UUID', NULL, NULL, 'These recipes were taken from “The Silver Spoon” cookbook, second edition, in English (2018).', 'right');
 ```
-5. Your database setup should be complete! Now you have access to the basic setup in order to run this locally.
+7. Your database setup should be complete! Now you have access to the basic setup in order to run the server and db locally. Follow the `Project Setup` step above to run the server.
