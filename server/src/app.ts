@@ -1,8 +1,7 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
-import itemsData from './data.json';
 import pool from './db';
-import { QueryResult } from 'mysql2';
+// import { QueryResult } from 'mysql2';
 
 type RecipeRequestParams = {
   id?: string
